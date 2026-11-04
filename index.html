@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Identificador de colores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Identificador de colores</h1>
+    <p class="sub">Sube una imagen y te digo qué porcentaje tiene de cada color.</p>
+
+    <div id="zona" role="button" tabindex="0">
+      <div class="icono">🌸</div>
+      <strong>Arrastra tu imagen aquí o haz clic para elegirla</strong>
+      <span>JPG, PNG, WEBP o GIF</span>
+    </div>
+    <input type="file" id="archivo" accept="image/*" hidden>
+
+    <section id="resultado">
+      <div class="tarjeta">
+        <img id="vista" alt="Imagen subida">
+        <button class="cambiar" id="otra" type="button">Subir otra imagen</button>
+      </div>
+      <div class="tarjeta">
+        <h2 id="titular"></h2>
+        <div id="lista"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
